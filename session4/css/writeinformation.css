@@ -11,6 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 20px;
 }
 
 .pcHeader img {
@@ -27,8 +29,13 @@
     margin: 0px 40px;
 }
 
+.pcSection {
+    width: 60%;
+}
+
 .pcInputHeader {
     font-weight: bold;
+    margin: 0px 0px 40px 0px;
 }
 
 .pcInputHeader > h2 {
@@ -40,16 +47,31 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    width: 700px;
 }
 
 .pcName, .pcPhoneNum, .pcEmailAdd, .pcDept, .pcBbun, .pcAttend, .pcPart {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    margin: 10px;
+
 }
 
 .pcInput > p {
     align-items: baseline;
+}
+
+.pcNameInput, .pcPhoneNumInput, .pcEmailAddInput, .pcDeptInput, .pcBbunInput, .pcAttendInput {
+    background-color: #fff;
+    border-radius: 20px;
+
+    width: 300px;
+    height: 30px;
+
+    margin: 5px;
 }
 
 .boxFortext {
@@ -57,14 +79,17 @@
 }
 
 .boxFortext p {
-    margin: 0px;
+    margin: 3px;
 }
 
 .bigBox {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin: 0px 0px 0px 80px;
 }
 
 .boxForpart {
@@ -72,6 +97,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+    width: 312px;
 }
 
 .boxFortext p {
@@ -82,14 +109,24 @@
     background-color: #ff7710;
     color: #fff;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: 15px;
+    justify-content: center;
+
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 .FrontEnd, .BackEnd {
     background-color: #fff;
     color: black;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: 15px;
+    justify-content: center;
+    
+    width: 100px;
+    height: 30px;
+    margin: 0px 10px;
 }
 
 .pcAside {
@@ -147,13 +184,8 @@
     margin: 10px;
 }
 
-.phoneHeader, .box, .phoneFooter {
-    display: none;
-}
 
-@media all and (min-width: 479px){
-    body{
-    .phoneHeader {
+.phoneHeader {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -168,6 +200,4 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-    }
 }
