@@ -261,3 +261,29 @@
 
     margin-top: 20px;
 }
+
+@media screen and (min-width: 1025px) {
+    .phoneBody {
+        display: none !important;
+    }
+    .pcBody {
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pcBody {
+        display: none !important; 
+    }
+    .phoneBody {
+        display: block; 
+    }
+    
+    .phoneOnGoing {
+        margin-left: 0;
+        width: 100%;
+    }
+    .phoneNameInput, .phonephoneNumInput, .phoneEmailAddInput, 
+    .phoneDeptInput, .phoneBbunInput, .phoneAttendInput {
+        width: 90%;
+    }
+}
