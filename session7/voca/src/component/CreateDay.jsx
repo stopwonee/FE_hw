@@ -1,5 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+import {InputArea, Button} from '../index.jsx';
 
 
 export default function CreateDay() {
@@ -26,3 +27,5 @@ export default function CreateDay() {
         </InputArea>
     );
 }
+
+

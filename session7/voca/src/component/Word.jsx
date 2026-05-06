@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {TableRow, TableData, Button} from '../index.jsx';
 
 export default function Word({word: initialWord}) {
     const [word, setWord] = useState(initialWord);

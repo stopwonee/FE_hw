@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+import {DayListstyle, DayListItem} from '../index.jsx';
 
 
 export default function DayList() {
@@ -10,12 +11,12 @@ export default function DayList() {
     }
 
     return (
-        <DayList>
+        <DayListstyle>
             {days.map((day) => (
-                <DayItem key={day.id}>
-                    <DayLink to={`/day/${day.day}`}>Day {day.day}</DayLink>
-                </DayItem>
+                <DayListItem key={day.id}>
+                    <Link to={`/day/${day.day}`}>Day {day.day}</Link>
+                </DayListItem>
             ))}
-        </DayList>
+        </DayListstyle>
     );
 }

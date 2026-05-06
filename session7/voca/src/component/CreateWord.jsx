@@ -1,7 +1,7 @@
 import React, {useRef, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import useFetch from "../hooks/useFetch";
-
+import {InputArea, Label, Button} from '../index.jsx';
 
 export default function CreateWord() {
     const day = useFetch("http://loclahost:300/days");
@@ -43,12 +43,12 @@ export default function CreateWord() {
             </InputArea>
 
             <InputArea>
-                <InputLabel>Kor</InputLabel>
+                <Label>Kor</Label>
                 <input type="text" placeholder="컴퓨터" ref={korRef}/>
             </InputArea>
 
             <InputArea>
-                <InputLabel>Day</InputLabel>
+                <Label>Day</Label>
                 <select day={dayRef}>
                     {day.map((day) => (
                         <option key={day.id} value={day.day}>{day.day}</option>

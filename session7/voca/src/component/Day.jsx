@@ -1,6 +1,7 @@
 import {useParams} from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import Word from "./Word";
+import {Table, TableData} from '../index.jsx';
 
 export default function Day() {
     const {day} = useParams();
@@ -13,7 +14,7 @@ export default function Day() {
             <Table>
                 <TableData>
                     {words.map((word) => (
-                        <word word={word} key={word.id}/>
+                        <Word word={word} key={word.id}/>
                     ))}
                 </TableData>
             </Table>
