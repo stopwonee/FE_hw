@@ -10,12 +10,12 @@ export default function DayList() {
     }
 
     return (
-        <ul className="list_day">
+        <DayList>
             {days.map((day) => (
-                <li key={day.id}>
-                    <Link to={`/day/${day.day}`}>Day {day.day}</Link>
-                </li>
+                <DayItem key={day.id}>
+                    <DayLink to={`/day/${day.day}`}>Day {day.day}</DayLink>
+                </DayItem>
             ))}
-        </ul>
+        </DayList>
     );
 }

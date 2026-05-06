@@ -10,13 +10,13 @@ export default function Day() {
         <>
             <h2>Day {day}</h2>
             {words.length === 0 && <span>Loading...</span>}
-            <table>
-                <tbody>
+            <Table>
+                <TableData>
                     {words.map((word) => (
                         <word word={word} key={word.id}/>
                     ))}
-                </tbody>
-            </table>
+                </TableData>
+            </Table>
         </>
     );
 }

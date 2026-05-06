@@ -30,19 +30,19 @@ export default function Word({word: initialWord}) {
     }
 
     return(
-        <tr className={isDone ? "off" : ""}>
-            <td>
+        <TableRow isDone={isDone}>
+            <TableData>
                 <input type="checkbox" checked={isDone} onChange={toggleDone}/>
-            </td>
+            </TableData>
 
-            <td>{word.eng}</td>
+            <TableData>{word.eng}</TableData>
 
-            <td>{isShow ? word.kor : ""}</td>
+            <TableData>{isShow ? word.kor : ""}</TableData>
 
-            <td>
-                <button onClick={toggleShow}>뜻 {isShow ? "숨기기" : "보기"}</button>
-                <button className="btn_del" onClick={del}>삭제</button>
-            </td>
-        </tr>
+            <TableData>
+                <Button onClick={toggleShow}>뜻 {isShow ? "숨기기" : "보기"}</Button>
+                <Button className="btn_del" onClick={del}>삭제</Button>
+            </TableData>
+        </TableRow>
     );
 }

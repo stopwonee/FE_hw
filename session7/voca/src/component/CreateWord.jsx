@@ -37,26 +37,26 @@ export default function CreateWord() {
 
     return (
         <form onSubmit={onSubmit}>
-            <div className="input_area">
+            <InputArea>
                 <label>Eng</label>
                 <input type="text" placeholder="computer" ref={engRef}/>
-            </div>
+            </InputArea>
 
-            <div className="input_area">
-                <label>Kor</label>
+            <InputArea>
+                <InputLabel>Kor</InputLabel>
                 <input type="text" placeholder="컴퓨터" ref={korRef}/>
-            </div>
+            </InputArea>
 
-            <div className="input_area">
-                <label>Day</label>
+            <InputArea>
+                <InputLabel>Day</InputLabel>
                 <select day={dayRef}>
                     {day.map((day) => (
                         <option key={day.id} value={day.day}>{day.day}</option>
                     ))}
                 </select>
-            </div>
+            </InputArea>
 
-            <button style={{opacity: isLoading ? 0.3 : 1, }}>{isLoading ? "Saving..." : "저장"}</button>
+            <Button style={{opacity: isLoading ? 0.3 : 1, }}>{isLoading ? "Saving..." : "저장"}</Button>
         </form>
     )
 }

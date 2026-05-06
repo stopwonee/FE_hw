@@ -20,9 +20,9 @@ export default function CreateDay() {
     }
 
     return(
-        <div>
+        <InputArea>
             <h3> 현재 일 수: {days.length}일</h3>
-            <button onClick={addDay}>Day 추가</button>
-        </div>
+            <Button onClick={addDay}>Day 추가</Button>
+        </InputArea>
     );
 }
