@@ -12,10 +12,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 400px;
 }
 
-.WritingBtn {
-  margin: 40px 40px 20px 0px;
+.WritingBtn, .comment-button {
+  margin-right: 700px;
+  margin-top: 40px;
   border-radius: 10px;
   background-color: #c9c9c9;
   border: none;
@@ -23,8 +26,107 @@
   height: 30px;
 }
 
-.postCompo > h3 {
+.BlogTitle {
+  margin-bottom: 60px;
+}
+
+.post-item {
   border: 1px solid rgb(73, 73, 73);
+  padding: 15px;
+  width: 800px;
+  height: 60px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.post-item > h3 {
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.BlogHeader {
+  margin-top: 70px;
+  font-size: xx-large;
+}
+
+.container textarea{
+  width: 800px;
+}
+
+.contentTitle {
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.contentCompo {
+  height: 500px;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.post-view-box{
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 800px;
+  height: auto;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+.post-view-box h1 {
+  font-size: xx-large;
+  margin-top: 40px;
+}
+
+.post-view-box p {
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.boxForComment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 320px;
+  margin-right: 320px;
+}
+
+.boxForComment h2 {
+  font-size: x-large;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.comment-item {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.comment-input {
+  margin-top: 20px;
+  height: 60px;
+  resize: none;
+}
+
+.comment-button {
+  margin-right: 700px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #c9c9c9;
+  border: none;
+  width: 100px;
+  height: 30px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

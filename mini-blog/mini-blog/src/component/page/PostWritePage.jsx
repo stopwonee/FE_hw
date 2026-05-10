@@ -9,9 +9,9 @@ function PostWritePage({addPost}) {
 
   return (
     <div className="container">
-      <h2>소플의 미니 블로그</h2>
-      <textarea placeholder="글 제목" value={title} onChange={(e) => setTitle(e.target.value)}/>
-      <textarea placeholder="내용을 입력하세요" value={content} onChange={(e) => setContent(e.target.value)}/>
+      <h3 className="BlogHeader">소플의 미니 블로그</h3>
+      <textarea className="contentTitle" placeholder="글 제목" value={title} onChange={(e) => setTitle(e.target.value)}/>
+      <textarea className="contentCompo" placeholder="내용을 입력하세요" value={content} onChange={(e) => setContent(e.target.value)}/>
       
       <button className="WritingBtn" onClick={() => {
         addPost(title, content);

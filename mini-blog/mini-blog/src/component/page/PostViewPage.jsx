@@ -33,23 +33,28 @@ function PostViewPage({posts}) {
 };
 
   return (
+  <div>
     <div className="container">
       <button className="WritingBtn" onClick={() => navigate("/")}>
         뒤로가기
       </button>
 
       <div className="post-view-box">
-        <h2>{post.title}</h2>
+        <h1>{post.title}</h1>
         <p>{post.content}</p>
       </div>
+    </div>
 
-      <h3>댓글</h3>
+    <div className="boxForComment">
+      <h2>댓글</h2>
       <CommentList comments={localComments} />
 
       <textarea className="comment-input" placeholder="댓글을 입력하세요" 
       value={comment} onChange={(e) => setComment(e.target.value)}/>
+      
       <button className="comment-button" onClick={handleCommentSubmit}>댓글 작성하기</button>
     </div>
+  </div>
   );
 }
 
